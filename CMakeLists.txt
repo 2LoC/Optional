@@ -36,7 +36,7 @@ if(NOT (CMAKE_VERSION VERSION_LESS 3.0))
     install(EXPORT optional-targets DESTINATION lib/cmake/akrzemi1_optional
         FILE akrzemi1_optional-config.cmake
         NAMESPACE akrzemi1::)
-    install(FILES optional.hpp DESTINATION include/akrzemi1)
+    install(FILES optional.hpp DESTINATION include/optional)
 endif()
 
 add_executable(test_optional test_optional.cpp)
